@@ -1,0 +1,85 @@
+<!--2022.08.23.(화)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formed의 input타입</h1>
+    <h3>텍스트 입력과 비밀번호 입력</h3>
+    <label for="">내용을 작성해주세요</label>
+    <br>
+    <input type="text" name="search" value="안녕">
+    <br>
+    <label for="">비밀번호 :</label>
+    <input type="password" name="password">
+
+    <h3>라디오 버튼</h3>
+    <input type="radio" name="lecture" value="html" checked> HTML <br>
+    <input type="radio" name="lecture" value="css"> CSS <br>
+    <input type="radio" name="lecture" value="java"> JAVA <br>
+    <input type="radio" name="lecture" value="cpp"> C++ <br>
+
+    <input type="radio" name="check" value="check"> 확인 <br>
+    <p>
+        radio 차입은 name으로 묶여서 원하는 값을 하나만 선택 <br>
+        value값을 통해서 서버로 값 전달 !!! 내용 확인 다시 하기 <br>
+        화면에 표시되는 것은 라디오버튼 분이기에 뒤에 텍스트로 표기해야한다
+    </p>
+
+    <h3>체크박스</h3>
+    <input type="checkbox" name="lectures" value="html" checked> HTML <br>
+    <input type="checkbox" name="lectures" value="css"> CSS <br>
+    <input type="checkbox" name="lectures" value="java"> JAVA <br>
+    <input type="checkbox" name="lectures" value="cpp" disabled> C++ <br>
+
+    <h3>파일 선택</h3>
+    <input type="file" accept="image/*"> 파일선택
+
+    <hr>
+    <h3>선택 입력</h3>
+    <select name="fruit">
+        <option value="apple">사과</option>
+        <option value="orange" selected>오렌지</option>
+        <option value="strawberry">딸기</option>
+        <option value="peach">복숭아</option>
+    </select>
+
+    <h3>텍스트에리아</h3>
+    <textarea name="message" id="" cols="30" rows="5">값을 넣었습니다</textarea>
+
+    <h3>버튼</h3>
+    <button type="button" onclick="alert('버튼을 클릭하셨군요!')">Click Me!</button>
+    <button>Click!</button>
+
+    <!--input 버튼을 통해서도 버튼을 만들 수 있다!-->
+    <input type="submit" value="제출">
+    <input type="button" value="제출">
+    <!-- form과 함께 쓰는 input button-->
+    <form action="" method="get">
+        <label for="">이름을 작성해주세요</label>
+        <input type="text" name="name">
+        <input type="submit">
+        <button type="submit">제출</button>
+    </form>
+    <p>
+        type submit은 form에 작성된 value 값을 서버에 전달할 때 사용<br>
+        value 값을 전달할 때에는 name의 이름에 담아서 전달
+        form의 메소드 get은 주소를 통해서 값을 전달한다 <br>
+        ?name=value의 형태
+    </p>
+
+    <h3>필드셋</h3>
+    <fieldset>
+        <legend>입력 양식</legend>
+        이름을 입력하세요
+        <input type="text">
+        <!--submit은 form 안에서만 form의 내용을 전송한다-->
+        <input type="submit" value="전송">
+    </fieldset>
+
+</body>
+</html>

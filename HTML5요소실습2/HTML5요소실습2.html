@@ -1,0 +1,27 @@
+<!--2022.08.24.(수)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML요소실습2</title>
+</head>
+<body>
+    <h1>식당예약</h1>
+    <p>식당 예약 날짜와 시간을 입력해주세요</p>
+    <form action="./예약완료.html">
+        <input type="date" name="date" 
+                min="2022-08-24" 
+                max="2022-08-31" 
+                value="2022-08-24">
+        <input type="time" max="20:00"><br>
+        <label for="email">이메일</label>
+        <input type="email"><br>
+        예약정보는 위의 이메일로 보내드리겠습니다.
+        <br>
+        <br>
+        <input type="submit" value="전송">
+    </form> 
+</body>
+</html>

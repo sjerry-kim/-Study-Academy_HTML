@@ -1,0 +1,57 @@
+<!--2022.08.24.(수)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 추가 input 요소</title>
+    <style>
+        input {display: block;}
+    </style>
+</head>
+<body>
+    <h1>추가된 input 요소</h1>
+    <!--input의 display는 inline이나 확인을 위해 block으로 설정 변경함-->
+    <input type="number" value="0" step="5"  min="0" max="100">
+    <input type="range" value="10" min="0" max="10">
+    <input type="color" value="#ff0000">
+    <input type="date" value="2022-08-24" min="2022-08-23">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="week">
+    <input type="email">
+    <p> input의 이메일타입은 입력받은 값에 @가 있는지 없는지 확인해준다</p>
+    <input type="url">
+    <input type="tel">
+    <input type="search">
+
+    <hr>
+    <h1>추가된 요소</h1>
+    <label for="myBrowser">아래 목록에서 브라우저를 선택하세요:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+        <option value="Microsoft Edge">
+    </datalist>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+    </form>
+
+    <hr>
+    <h1>input 속성</h1>
+    <form action="" autocomplete="on">
+        <input type="text" name="word" autofocus placeholder="아무 값이나 입력하세요" required>
+        <input type="submit" value="제출">
+    </form>
+
+
+</body>
+</html>

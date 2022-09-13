@@ -1,0 +1,57 @@
+<!--2022.08.23.(화)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--속성값이 블록-->
+    <h1>블록 타입의 태그</h1>
+    <p style="border : 3px solid red;">p요소는 display 속성값이 블록이 요소입니다</p>
+    <p style="border : 3px solid red;">p요소는 display 속성값이 블록이 요소입니다</p>
+    <h1 style="border : 3px solid blue;">h요소는 display 속성값이 블록이 요소입니다</h1>
+    <ul style="border : 3px solid grey;">
+        <li>ul 요소는 display 속성값이 블록입니다</li>
+    </ul>
+    <div style="border : 3px solid orange;"> div 태그를 사용하였습니다</div>
+    <div style="border : 3px solid green;">
+        <h1>제목</h1>
+        <p>내용 작성</p>
+    </div>
+
+    <hr>
+    <!--속성값이 인라인-->
+    <h1>인라인 타입의 태그</h1>
+    <span style="background-color: yellow;">span태그는 인라인 타입의 태그입니다</span>
+    <a href="" style="background-color: lightblue;">a태그는 인라인타입의 태그입니다</a>
+    <img src="" alt="이미지파일" style="border: 3px solid black;">
+
+    <hr>
+    <!--속성값 변경하기-->
+    <h1>display 속성 바꾸기</h1>
+    <div style="border: 3px solid orange; display: inline-block; width:400px" >
+        <img src="./img.jpg" alt="이미지" width="150">
+        <img src="./img.jpg" alt="이미지" width="150">
+    </div>
+    <p> style의 display 속성을 이용해서 원하는 속성으로 바꿀 수 있다 <br>
+        div에서 display 속성으로는 inline-block을 많이 사용한다 <br>
+        style에서 크기값을 적을 때는 반드시 단위기호를 사용해야 한다    
+    </p>
+
+    <hr>
+    <h1>iframe을 이용한 페이지 분할</h1>
+    <p>
+        <a href="./텍스트요소실습.html" target="textIframe" >
+            텍스트요소실습
+        </a>
+        <!-- 즉석실습 : 텍스트요소로 돌아오는 a링크를 작성하세요-->
+        <a href="./HTML의텍스트요소.html" target="textIframe">
+            텍스트요소
+        </a>
+    </p>
+    <iframe src="./HTML의텍스트요소.html" style="width: 100%;" name="textIframe" frameborder="1"></iframe>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--2022.08.23.(화)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {background-color: pink; color: blueviolet;}
+        .text {color : rgb(9, 59, 9);}
+        #name {border: 3px solid brown;}
+    </style>
+</head>
+<body>
+    <h1 class="text">CSS</h1>
+    <p>CSS를 이용하여 html을 꾸며줄 수 있다</p>
+    <p class="text">선택자를 이용하여 선택할 수 있다</p>
+    <p id="name">
+        id값은 유일한 태그의 이름으로 지정해줄 때 사용
+        중복사용을 권장하지 않는다(오류로 알려주지 않음).
+    </p>
+    
+    <h1>자바스크립트</h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="자바스크립트를 배워보죠!";
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--2022.08.25.(목)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5canvas실습</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="300" height="200"
+            style="border: 1px solid brown;" >
+    </canvas>
+    <script>
+        let paper =  document.getElementById("mycanvas");
+        let context = paper.getContext("2d");
+
+        let grd = context.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(1,"white");
+
+        context.fillStyle = grd;
+        context.fillRect(10,10,150,80);
+
+        context.fillStyle="white";
+        // 현재 컴퓨터에 설치되어있는 글꼴을 화면에 출력할 수 있다
+        context.font="30px 'Sitka Display'"
+        context.fillText("CANVAS",  20, 50);
+    </script>
+</body>
+</html>
